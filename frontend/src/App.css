@@ -1,0 +1,197 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f8f6;
+  color: #252b27;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  min-height: 76px;
+  padding: 0 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e5e9e5;
+  background: #fff;
+}
+
+.navbar h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.navbar h2 span {
+  color: #2f7d5b;
+}
+
+.navbar p {
+  font-size: 14px;
+  color: #747d76;
+}
+
+.hero {
+  width: min(720px, 90%);
+  margin: 65px auto;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #2f7d5b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 6vw, 58px);
+  line-height: 1.12;
+  letter-spacing: -1.5px;
+  margin: 20px 0;
+  color: #252b27;
+}
+
+.subtitle {
+  max-width: 540px;
+  margin: 0 auto;
+  color: #747d76;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.analyzer {
+  margin-top: 42px;
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #e5e9e5;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(30, 50, 35, 0.04);
+}
+
+.upload-box {
+  padding: 28px 16px;
+  text-align: center;
+  border: 1.5px dashed #b9cbbf;
+  border-radius: 9px;
+  background: #fbfdfb;
+}
+
+.upload-icon {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 12px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #eaf3ed;
+  color: #2f7d5b;
+  font-size: 25px;
+}
+
+.upload-box h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.upload-box p {
+  color: #879087;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.upload-box input {
+  max-width: 100%;
+  font-size: 13px;
+}
+
+.job-box {
+  margin-top: 26px;
+}
+
+.job-box label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.job-box textarea {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #dfe5df;
+  border-radius: 8px;
+  resize: vertical;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.job-box textarea:focus {
+  border-color: #2f7d5b;
+}
+
+.analyzer button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #2f7d5b;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.analyzer button:hover {
+  background: #256648;
+}
+
+footer {
+  padding: 25px 15px;
+  text-align: center;
+  color: #89918b;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    min-height: 64px;
+    padding: 0 5%;
+  }
+
+  .navbar h2 {
+    font-size: 20px;
+  }
+
+  .navbar p {
+    font-size: 12px;
+  }
+
+  .hero {
+    margin: 42px auto;
+  }
+
+  .analyzer {
+    padding: 18px;
+    margin-top: 30px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
